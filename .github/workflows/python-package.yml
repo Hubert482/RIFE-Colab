@@ -25,7 +25,7 @@ jobs:
         python install_dependencies.py
     - name: build with pyinstaller
       run: |
-        nuitka --standalone --follow-imports --plugin-enable=torch --plugin-enable=numpy --plugin-enable=qt-plugins --no-prefer-source-code --debug --include-module="torch.onnx.symbolic_opset7" --plugin-enable=pylint-warnings --windows-product-name=RIFE_COLAB --windows-file-version=0201 --windows-company-name=I_DONT_HAVE_COMPANY main_gui.py
+        pyinstaller main_gui.py
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v2.2.2
       with:
