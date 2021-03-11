@@ -101,8 +101,8 @@ def mainInstall():
             ffprobeExists = True
         except:
             print("Can't find ffmpeg/ffprobe - Downloading")
-            downloadFile(r'https://github.com/BtbN/FFmpeg-Builds/releases/download/autobuild-2021-02-06-12-33/ffmpeg-n4.3.1-221-gd08bcbffff-win64-gpl-4.3.zip','ffmpeg.zip')
-            extractArchive('ffmpeg.zip',['doc'])
+            downloadFile(r'https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z','ffmpeg.7z')
+            extractArchive('ffmpeg.7z',['doc'])
 
     print('----DEPENDENCY INSTALLATION COMPLETE----')
 
